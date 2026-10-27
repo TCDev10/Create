@@ -110,16 +110,7 @@ public class ExtendoGripClient {
 			sendInteractionPacket(target, event.getHand());
 	}
 
-	@SubscribeEvent
-	public static void notifyServerOfLongRangeSpecificInteractions(PlayerInteractEvent.EntityInteractSpecific event) {
-		Entity entity = event.getEntity();
-		Entity target = event.getTarget();
-		if (!isUncaughtClientInteraction(entity, target))
-			return;
-		Player player = (Player) entity;
-		if (ExtendoGripItem.isHoldingExtendoGrip(player))
-			sendInteractionPacket(target, event.getHand(), event.getLocalPos());
-	}
+	// removed notifyServerOfLongRangeSpecificInteractions (EntityInteractSpecific removed in 26.2)
 
 	public static void initializeClient(ExtendoGripItem item, Consumer<IClientItemExtensions> consumer) {
 		consumer.accept(SimpleCustomRenderer.create(item, new ExtendoGripItemRenderer()));

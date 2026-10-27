@@ -1,6 +1,6 @@
 {
   "model": {
     "type": "minecraft:model",
-    "model": "create:block/brass_tunnel"
+    "model": "create:item/brass_tunnel"
   }
 }

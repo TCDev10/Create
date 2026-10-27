@@ -143,6 +143,8 @@ dependencies {
         }
     })
 
+    
+    jarJar(api("net.createmod.catnip:catnip-neoforge:$ponder_version+mc$minecraft_version"))
     jarJar(api("net.createmod.ponder:ponder-neoforge:$ponder_version+mc$minecraft_version") {
         version {
             strictly "[$ponder_version+mc$minecraft_version,)"

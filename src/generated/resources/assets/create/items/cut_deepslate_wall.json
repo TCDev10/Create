@@ -1,6 +1,6 @@
 {
   "model": {
     "type": "minecraft:model",
-    "model": "create:block/cut_deepslate_wall"
+    "model": "create:item/cut_deepslate_wall"
   }
 }
